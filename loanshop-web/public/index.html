@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html data-ng-app="app">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to LoanShop</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/font-icon.css">
+    <link rel="stylesheet" type="text/css" href="css/drawer.min.css">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+
+
+    <!--    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>-->
+
+</head>
+
+<body class="drawer drawer--right" ng-controller="AppCtrl">
+
+    <div class="app" id="app" ui-view>
+    </div>
+
+    <!-- jQuery -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+    <script src="js/iscroll.min.js"></script>
+    <script src="js/drawer.min.js" charset="utf-8"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+
+
+    <!-- Angular -->
+    <script src="bower_components/angular/angular.js"></script>
+
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/ngstorage/ngStorage.js"></script>
+    <script src="bower_components/angular-ui-utils/ui-utils.js"></script>
+    
+    <!-- bootstrap -->
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <!-- lazyload -->
+    <script src="bower_components/oclazyload/dist/ocLazyLoad.js"></script>
+    <!-- translate -->
+    <script src="bower_components/angular-translate/angular-translate.js"></script>
+    <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+    <script src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+    <script src="bower_components/angular-translate-storage-local/angular-translate-storage-local.js"></script>
+
+    <!-- Include the JS ReCaptcha API -->
+    <script src="https://www.google.com/recaptcha/api.js?render=explicit&onload=vcRecaptchaApiLoaded" async defer></script>
+    <script src="bower_components/angular-reCaptcha/angular-recaptcha.js"></script>
+
+    <!-- App -->
+    <script src="scripts/js/app.js"></script>
+    <script src="scripts/js/config.js"></script>
+    <script src="scripts/js/config.lazyload.js"></script>
+    <script src="scripts/js/config.router.js"></script>
+    <script src="scripts/js/main.js"></script>
+    <script src="scripts/js/services/ui-load.js"></script>
+    <script src="scripts/js/directives/setnganimate.js"></script>
+    <script src="scripts/js/directives/ui-butterbar.js"></script>
+    <script src="scripts/js/directives/ui-focus.js"></script>
+    <script src="scripts/js/directives/ui-fullscreen.js"></script>
+    <script src="scripts/js/directives/ui-jq.js"></script>
+    <script src="scripts/js/directives/ui-module.js"></script>
+    <script src="scripts/js/directives/ui-nav.js"></script>
+    <script src="scripts/js/directives/ui-scroll.js"></script>
+    <script src="scripts/js/directives/ui-shift.js"></script>
+    <script src="scripts/js/directives/ui-toggleclass.js"></script>
+    <script src="scripts/js/angular-notification.js"></script>
+    <!-- Lazy loading -->
+
+    <script>
+        $(document).ready(function () {
+            $('#fix-screen').height($(window).height() - 117);
+            $('.drawer').drawer();
+        });
+    </script>
+</body>
+</html>

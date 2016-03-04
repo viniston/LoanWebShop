@@ -1,0 +1,1407 @@
+﻿<div ng-controller="partnerCtrl">
+    <div class="innerPage">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <h3>Partner Registration</h3>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">Partner Registration</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section class="content-section" id="section1">
+            <h2 class="title"><span>New Partner</span></h2>
+            <div class="row">
+                <form class="form-horizontal">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label for="businessName" class="col-sm-4 control-label">Business Name</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="businessName" placeholder="">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label for="websiteURL" class="col-sm-4 control-label">Website URL</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="websiteURL" placeholder="">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label for="emailAddress" class="col-sm-4 control-label">Email Address</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control" id="emailAddress" placeholder="">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label for="confirmEmail" class="col-sm-4 control-label">Confirm Email</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control" id="confirmEmail" placeholder="">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label for="createPassword" class="col-sm-4 control-label">Create a Password</label>
+                            <div class="col-sm-8">
+                                <input type="password" class="form-control" id="createPassword" placeholder="">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label for="createPassword" class="col-sm-4 control-label">Confirm Password</label>
+                            <div class="col-sm-8">
+                                <input type="password" class="form-control" id="confirmPassword" placeholder="">
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-md-offset-4">
+                        <button type="button" class="btn btn-info btn-block" ng-click="section2();">CONTINUE</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="content-section" id="section2" style="display: none;">
+            <h2 class="title"><span>Contact Information</span></h2>
+            <div class="row">
+                <form class="form-horizontal">
+                    <div class="panel">
+                        <h5>Contact Person</h5>
+                        <div class="panel-body">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label for="firstName" class="col-sm-4 control-label">First Name</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="firstName" placeholder="">
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label for="lastName" class="col-sm-4 control-label">Last Name</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="lastName" placeholder="">
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <h5>Tell us about your business </h5>
+                        <div class="panel-body">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label for="businesstype" class="col-sm-4 control-label">Type of Business</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>Select One</option>
+                                            <option>Limited Liability Corporation</option>
+                                            <option>Partnership</option>
+                                            <option>Public Corporation</option>
+                                        </select>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label for="businessCategory" class="col-sm-4 control-label">Industry </label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>Select One</option>
+                                            <option>Software</option>
+                                            <option>Title Lending</option>
+                                            <option>Payday Lending</option>
+                                        </select>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 ein">
+                                <div class="form-group">
+                                    <label for="ein" class="col-sm-4 control-label">EIN</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="ein" placeholder="">
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <p class="ein-text">Your tax ID will be used for tax reporting purposes only. You can edit this information on your Dashboard at any time.</p>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <h5>Your Business Address</h5>
+                        <div class="panel-body">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label for="estimatedAnnualRevenue" class="col-sm-4 control-label">Address </label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="" placeholder="">
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label for="estimatedAnnualRevenue" class="col-sm-4 control-label">Suite #</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="Text1" placeholder="">
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label for="estimatedAnnualRevenue" class="col-sm-4 control-label">City</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="Text2" placeholder="">
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label for="estimatedAnnualRevenue" class="col-sm-4 control-label">State</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>Select One</option>
+                                            <option>Texas</option>
+                                            <option>Ohio</option>
+                                            <option>Arizona</option>
+                                        </select>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label for="estimatedAnnualRevenue" class="col-sm-4 control-label">ZIP</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="Text3" placeholder="">
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label for="estimatedAnnualRevenue" class="col-sm-4 control-label">Phone Number</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="Text4" placeholder="">
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-group">
+                                    <label for="estimatedAnnualRevenue" class="col-sm-4 control-label">Fax Number</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" id="Text5" placeholder="">
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 control-label col-md-offset-4 col-sm-offset-4">
+                        <button type="button" class="btn btn-info btn-block" ng-click="section3();">CONTINUE</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="content-section" id="section3" style="display: none;">
+            <h2 class="title"><span>Business Information</span></h2>
+            <form>
+                <div class="panel">
+                    <h4 class="text-center">How do you operate?</h4>
+                    <div class="panel-body">
+                        <div class="col-md-4">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Online Only
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Physical Lending
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Both
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <h4 class=" text-center">States where you operate</h4>
+                    <div class="panel-body">
+                        <div class="col-md-3">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Alabama
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Alaska
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Arizona
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Arkansas
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                California
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Colorado
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Connecticut
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Delaware
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                District of Columbia
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Florida
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Georgia
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Hawaii
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Idaho
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Illinois
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Indiana
+                            </label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Iowa
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Kansas
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Kentucky
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Louisiana
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Maine
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Maryland
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Massachusetts
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Michigan
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Minnesota
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Mississippi
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Missouri
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Montana
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Nebraska
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Nevada
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                New Hampshire
+                            </label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                New Jersey
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                New Mexico
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                New York
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                North Carolina
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                North Dakota
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Ohio
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Oklahoma
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Oregon
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Pennsylvania
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Rhode Island
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                South Carolina
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                South Dakota
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Tennessee
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Texas
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Utah
+                            </label>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Vermont
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Virginia
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Washington
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                West Virginia
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Wisconsin
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Wyoming
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-offset-4">
+                    <button type="button" class="btn btn-info btn-block" ng-click="section4();">CONTINUE</button>
+                </div>
+            </form>
+        </section>
+        <section class="content-section" id="section4" style="display: none;">
+            <h2 class="title"><span>Store Information</span></h2>
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                <div class="form-group"><a href="#">Dowload sample csv file</a></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <tbody>
+                                <tr>
+                                    <th>Store Number</th>
+                                    <th>Store Name</th>
+                                    <th>Date Opened</th>
+                                    <th>Address </th>
+                                    <th>City</th>
+                                    <th>State</th>
+                                    <th>ZIP</th>
+                                    <th>Phone #</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <div class="form-group">
+                                            <div class="date-picker date">
+                                                <input type="text" class="form-control add-on" id="Text6" placeholder="MM/DD/YYYY">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <div class="form-group">
+                                            <div class="date-picker date">
+                                                <input type="text" class="form-control add-on" id="Text7" placeholder="MM/DD/YYYY">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <div class="form-group">
+                                            <div class="date-picker date">
+                                                <input type="text" class="form-control add-on" id="Text8" placeholder="MM/DD/YYYY">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <div class="form-group">
+                                            <div class="date-picker date">
+                                                <input type="text" class="form-control add-on" id="Text9" placeholder="MM/DD/YYYY">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <div class="form-group">
+                                            <div class="date-picker date">
+                                                <input type="text" class="form-control add-on" id="Text10" placeholder="MM/DD/YYYY">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <div class="form-group">
+                                            <div class="date-picker date">
+                                                <input type="text" class="form-control add-on" id="Text11" placeholder="MM/DD/YYYY">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <div class="form-group">
+                                            <div class="date-picker date">
+                                                <input type="text" class="form-control add-on" id="Text12" placeholder="MM/DD/YYYY">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                    <td>
+                                        <input type="text" class="form-control"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3">
+                            <button type="button" class="btn btn-info btn-block" ng-click="section2();">UPLOAD STORE FILE</button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3">
+                            <button type="button" class="btn btn-info btn-block" ng-click="section5();">CONTINUE</button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section" id="section5" style="display: none;">
+            <div class="col-md-12">
+                <h4>How would you like to Approve Applications?</h4>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-3">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="Checkbox1" value="option1">
+                            <b>Automated Approval</b>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="Checkbox2" value="option1">
+                            <b>Conditional Approval</b>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="Checkbox3" value="option1">
+                            <b>Manual</b>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <h4>How would you like to Receive Applications?</h4>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-3">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="Checkbox4" value="option1">
+                            <b>Self Lending Platform</b>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="checkboxSuccess" value="option1">
+                            <b>Text Files</b>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="Checkbox5" value="option1">
+                            <b>XXX Lending Platform</b>
+                        </label>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">Sure. Please let us know the best time and number to call you for completing the registration process.</div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-labe">Date :</label>
+                        <div class="col-sm-9">
+                            <div class="date-picker date">
+                                <input type="text" class="form-control add-on" id="Text13" placeholder="MM/DD/YYYY">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-labe">Time :</label>
+                        <div class="col-sm-4">
+                            <div class="input-append time-picker">
+                                <input data-format="HH:mm:ss" type="text" data-time-icon="icon-time" class="add-on form-control" placeholder="HH:MM:SS">
+                            </div>
+                        </div>
+                        <label class="col-sm-2 control-labe">between</label>
+                        <div class="col-sm-4">
+                            <div class="input-append time-picker">
+                                <input data-format="HH:mm:ss" type="text" data-time-icon="icon-time" class="add-on form-control" placeholder="HH:MM:SS">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3">
+                        <button type="button" class="btn btn-info btn-block" ng-click="section5_1();">CONTINUE</button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section" id="section5-1" style="display: none;">
+            <div class="col-md-12">
+                <h4>How would you like to Approve Applications?</h4>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-3">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="Checkbox6" value="option1">
+                            <b>Automated Approval</b>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="Checkbox7" value="option1">
+                            <b>Conditional Approval</b>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="Checkbox8" value="option1">
+                            <b>Manual</b>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <h4>How would you like to Receive Applications?</h4>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-3">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="Checkbox9" value="option1">
+                            <b>Self Lending Platform</b>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="Checkbox10" value="option1">
+                            <b>Text Files</b>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="Checkbox11" value="option1">
+                            <b>XXX Lending Platform</b>
+                        </label>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">Sure, Please configure your product offerings for XXX to underwrite your customers.</div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3">
+                        <button type="button" class="btn btn-info btn-block" ng-click="section6();">CONTINUE</button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section" id="section6" style="display: none;">
+            <div class="form-horizontal">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="exampleInputEmail1">Product Name</label>
+                        <div class="col-sm-4">
+                            <input type="email" class="form-control" id="Email1" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="exampleInputEmail1">Product Type</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="Email2" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-12 text-left" for="exampleInputEmail1">( Unsecured / Secured - Vehicle, Secured - Bank Account )</label>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div class="col-sm-8 col-md-offset-4 col-sm-offset-3">
+                            <label class=" control-label" for="exampleInputEmail1">Minimum</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div class="col-sm-8">
+                            <label class=" control-label text-left" for="exampleInputEmail1">Maximum</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="exampleInputEmail1">Loan Amount</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="Email3" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="Email4" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="exampleInputEmail1">Loan Amount</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="Email5" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="Email6" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="exampleInputEmail1"># of Installments</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="Email7" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="Email8" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="exampleInputEmail1">Duration</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="Email9" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="Email10" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="exampleInputEmail1">Loan Frequency</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="Email11" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-12 text-left" for="exampleInputEmail1">( Monthly / Semi-Monthly / Weekly / Bi-weekly / Pay Frequency )</label>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="exampleInputEmail1">Direct Deposit</label>
+                        <div class="col-sm-8">
+                            <div class="checkbox">
+                                <label class=" col-md-3 col-sm-3 col-xs-3">
+                                    <input type="checkbox" id="Checkbox12" value="">
+                                    Yes
+                                </label>
+                                <label class=" col-md-3 col-sm-3 col-xs-3">
+                                    <input type="checkbox" id="Checkbox13" value="">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="exampleInputEmail1">Disbursement Mode</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="Email12" placeholder="">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="col-sm-12 text-left" for="exampleInputEmail1">( ACH / Check / Cash )</label>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="row aligner">
+                        <div class="col-md-10">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped">
+                                    <tbody id="append-sec">
+                                        <tr>
+                                            <th>Fee Type</th>
+                                            <th>From Amt</th>
+                                            <th>To Amt </th>
+                                            <th>Base Value</th>
+                                            <th>Value</th>
+                                            <th style="width: 14%;"></th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="text" class="form-control"></td>
+                                            <td>
+                                                <input type="text" class="form-control"></td>
+                                            <td>
+                                                <input type="text" class="form-control"></td>
+                                            <td>
+                                                <input type="text" class="form-control"></td>
+                                            <td>
+                                                <input type="text" class="form-control"></td>
+                                            <td><span>
+                                                <input type="checkbox" />
+                                            </span><span>% </span><span>or </span><span>
+                                                <input type="checkbox" />
+                                            </span><span>$ </span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="text" class="form-control"></td>
+                                            <td>
+                                                <input type="text" class="form-control"></td>
+                                            <td>
+                                                <input type="text" class="form-control"></td>
+                                            <td>
+                                                <input type="text" class="form-control"></td>
+                                            <td>
+                                                <input type="text" class="form-control"></td>
+                                            <td><span>
+                                                <input type="checkbox" />
+                                            </span><span>% </span><span>or </span><span>
+                                                <input type="checkbox" />
+                                            </span><span>$ </span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="text" class="form-control"></td>
+                                            <td>
+                                                <input type="text" class="form-control"></td>
+                                            <td>
+                                                <input type="text" class="form-control"></td>
+                                            <td>
+                                                <input type="text" class="form-control"></td>
+                                            <td>
+                                                <input type="text" class="form-control"></td>
+                                            <td><span>
+                                                <input type="checkbox" />
+                                            </span><span>% </span><span>or </span><span>
+                                                <input type="checkbox" />
+                                            </span><span>$ </span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-sm-1 col-xs-12 aligner-item aligner-item--bottom">
+                            <button type="button" class="btn btn-info" ng-click="add_fields();">Add More</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3">
+                            <button type="button" class="btn btn-info btn-block" ng-click="section7();">CONTINUE</button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section" id="section7" style="display: none;">
+            <div class="form-horizontal">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="exampleInputEmail1">Product Name</label>
+                        <div class="col-sm-4">
+                            <input type="email" class="form-control" id="Email13" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-sm-12">
+                    <h4>Qualifiers</h4>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div class="col-sm-8 col-md-offset-4 col-sm-offset-3">
+                            <label class=" control-label" for="exampleInputEmail1">Minimum</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div class="col-sm-8">
+                            <label class=" control-label text-left" for="exampleInputEmail1">Maximum</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="exampleInputEmail1">Income Amount</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="Email14" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="Email15" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="exampleInputEmail1">Qualification %</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="Email16" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="exampleInputEmail1">Qual Frequency</label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" id="Email17" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-12 text-left" for="exampleInputEmail1">( Monthly / Semi-Monthly / Weekly / Bi-weekly / Pay Frequency )</label>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-8">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <tbody>
+                                <tr>
+                                    <th>Score Type</th>
+                                    <th>Min Val</th>
+                                    <th>To Amt </th>
+                                    <th>Max Val</th>
+                                    <th>From Amt</th>
+                                    <th>To Amt</th>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">
+                    <button type="button" class="btn btn-info btn-xs">Add More</button>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3">
+                            <button type="button" class="btn btn-info btn-block">Add More</button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <h4>Documentation</h4>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="col-sm-8 col-md-offset-4 col-sm-offset-3">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">
+                                Paystub
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">
+                                Bank Statement
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">
+                                Address Proof
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">
+                                ID Proof
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3">
+                        <button type="button" class="btn btn-info btn-block">AVAILABLE AT STATE(S)/STORE(S)</button>
+                        <button type="button" class="btn btn-info btn-block">ADD MORE PRODUCTS</button>
+                        <button type="button" class="btn btn-info btn-block" ng-click="section8();">CONTINUE</button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section" id="section8" style="display: none;">
+            <div class="col-sm-12">
+                <h4>SPECIAL FEATURES</h4>
+                <p>Please list out as many features as you have and offer to customers. All these features will be shown to your prospective customers before the lender selection.</p>
+            </div>
+            <div class="col-md-12">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">
+                        Funds available Same Day in your checking account.
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">
+                        National Lender with NO hidden costs and NO Prepayment Penalties
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">
+                        Loans upto $10000
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">
+                        Apply online in Just Minutes and have funds in as little as one day !
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">
+                        Simple and secure NO credit score is required
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">
+                        Low Fixed Rate Loans upto $3500
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">
+                        Rates from 12.55% to 24.99%
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">
+                        Your neighbourhood Lender with Personalized customer support, NO Prepayment Penalties and NO hidden costs
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">
+                        A fast, data-driven application process that looks at your profile
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">
+                        No origination, transaction or prepayment fees
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">
+                        Easy Application Process: Simple online application and access to live customer support 7 days a week
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3">
+                        <button type="button" class="btn btn-info btn-block">ADD MORE</button>
+                        <button type="button" class="btn btn-info btn-block" ng-click="section9();">CONTINUE</button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section" id="section9" style="display: none;">
+            <div class="col-sm-12">
+                <p>Please configure SFTP Access details to Receive Applications via Text Files</p>
+            </div>
+            <div class="form-horizontal">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="exampleInputEmail1">Username</label>
+                        <div class="col-sm-4">
+                            <input type="email" class="form-control" id="Email18" placeholder="">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="exampleInputEmail1">Password</label>
+                        <div class="col-sm-4">
+                            <input type="email" class="form-control" id="Email19" placeholder="">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="exampleInputEmail1">Confirm Password</label>
+                        <div class="col-sm-4">
+                            <input type="email" class="form-control" id="Email20" placeholder="">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div class="col-sm-12">
+                <p>Please configure Administrative user credentials to access XXX Lending Platform</p>
+            </div>
+            <div class="form-horizontal">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="exampleInputEmail1">Username</label>
+                        <div class="col-sm-4">
+                            <input type="email" class="form-control" id="Email21" placeholder="">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="exampleInputEmail1">Password</label>
+                        <div class="col-sm-4">
+                            <input type="email" class="form-control" id="Email22" placeholder="">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="exampleInputEmail1">Confirm Password</label>
+                        <div class="col-sm-4">
+                            <input type="email" class="form-control" id="Email23" placeholder="">
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3">
+                        <button type="button" class="btn btn-info btn-block">COMPLETE REGISTRATION</button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

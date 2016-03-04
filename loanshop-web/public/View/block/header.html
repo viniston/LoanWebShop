@@ -1,0 +1,32 @@
+﻿<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 col-sm-2 col-xs-4 logo">
+                <a ui-sref="app.home">
+                    <img src="images/logo.svg" alt=""></a>
+            </div>
+            <div class="col-md-11 col-sm-10 col-xs-8">
+
+                <button type="button" class="drawer-toggle drawer-hamburger">
+                    <span class="sr-only">toggle navigation</span>
+                    <span class="drawer-hamburger-icon"></span>
+                </button>
+
+                <nav class="drawer-nav" role="navigation">
+                    <ul class="drawer-menu pull-left">
+                        <li ui-sref-active="active"><a ui-sref="app.borrow" class="drawer-menu-item" translate="LanguageContents.header.navbar.borrow"></a></li>
+                        <li ui-sref-active="active"><a ui-sref="app.partner" class="drawer-menu-item" translate="LanguageContents.header.navbar.partner"></a></li>
+                        <li><a href="#" class="drawer-menu-item" translate="LanguageContents.header.navbar.resources"></a></li>
+                        <li><a href="#" class="drawer-menu-item" translate="LanguageContents.header.navbar.about"></a></li>
+                    </ul>
+                    <ul class="drawer-menu pull-right">
+                        <li class="active" ng-click="setLang('en',$event)"><a href="#" class="drawer-menu-item" translate="LanguageContents.header.navbar.english"></a></li>
+                        <li ng-click="setLang('es',$event)"><a href="#" class="drawer-menu-item" translate="LanguageContents.header.navbar.spanish"></a></li>
+                        <li><a href="#" class="drawer-menu-item" translate="LanguageContents.header.navbar.login"></a></li>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

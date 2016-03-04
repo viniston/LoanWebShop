@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?xton8e');
+    src:    url('../fonts/icomoon.eot?xton8e#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?xton8e') format('truetype'),
+        url('../fonts/icomoon.woff?xton8e') format('woff'),
+        url('../fonts/icomoon.svg?xton8e#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-briefcase:before {
+    content: "\e900";
+}
+.icon-check:before {
+    content: "\e901";
+}
+.icon-doller:before {
+    content: "\e902";
+}
+.icon-doller-line:before {
+    content: "\e903";
+}
+.icon-exprience:before {
+    content: "\e904";
+}
+.icon-facebook:before {
+    content: "\e905";
+}
+.icon-hand-shake:before {
+    content: "\e906";
+}
+.icon-life:before {
+    content: "\e907";
+}
+.icon-lock:before {
+    content: "\e908";
+}
+.icon-nav:before {
+    content: "\e909";
+}
+.icon-profite:before {
+    content: "\e90a";
+}
+.icon-quality:before {
+    content: "\e90b";
+}
+.icon-sad-face:before {
+    content: "\e90c";
+}
+.icon-smile-face:before {
+    content: "\e90d";
+}
+.icon-twitter:before {
+    content: "\e90e";
+}
+

@@ -1,0 +1,447 @@
+﻿<div ng-controller="borrowCtrl">
+    <div class="innerPage">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <h3>Customer Registration</h3>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li class="active">Customer Registration</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="content-section" id="section1">
+            <h2 class="title"><span>New Customer</span></h2>
+            <div class="row">
+                <form class="form-horizontal">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">First Name</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control" id="" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">Middle Name</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control" id="Email1" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">Last Name</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control" id="Email2" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">Preferred Language</label>
+                            <div class="col-sm-8">
+                                <select class="form-control">
+                                    <option>English</option>
+                                    <option>French</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">Email Address</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control" id="Email3" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">Create a Password</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control" id="Email4" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class=" col-md-4 control-label" for="exampleInputEmail1">Confirm Password</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control" id="Email5" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <div class="col-md-4 col-sm-4 col-xs-12 text-center col-md-offset-4 col-sm-offset-4">
+                                <!-- <div id="capcha"></div>-->
+                                <div id="capcha"
+                                    vc-recaptcha
+                                    theme="'light'"
+                                    key="model.key"
+                                    on-create="setWidgetId(widgetId)"
+                                    on-success="setResponse(response)"
+                                    on-expire="cbExpiration()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3">
+                                <button type="button" class="btn btn-info btn-block" ng-click="section2();">CONTINUE</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="content-section" id="section2" style="display: none;">
+            <h2 class="title"><span>ID verification</span></h2>
+            <div class="row">
+                <form class="form-horizontal">
+
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">SSN</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="Text1" placeholder="xxx-xx-xxxx">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">DOB</label>
+                            <div class="col-sm-8 date date-picker" id="Div1">
+                                <input type="text" class="form-control add-on" placeholder="MM/DD/YYYY">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">ID Type</label>
+                            <div class="col-sm-8">
+                                <select class="form-control">
+                                    <option>Select One</option>
+                                    <option>Drivers License</option>
+                                    <option>State Issue ID</option>
+                                    <option>Passport Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">ID Number</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="Text2" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class=" col-md-4 control-label" for="exampleInputEmail1">Issue State</label>
+                            <div class="col-sm-8">
+                                <select class="form-control">
+                                    <option>Select One</option>
+                                    <option>Texas</option>
+                                    <option>Ohio</option>
+                                    <option>Arizona</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class=" col-md-4 control-label" for="exampleInputEmail1">Exp Date</label>
+                            <div class="col-sm-8 date-picker date" id="datepicker-exp">
+                                <input type="text" class="form-control add-on" id="Text3" placeholder="MM/DD/YYYY">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3">
+                                <button type="button" class="btn btn-info btn-block" ng-click="section3();">CONTINUE</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="content-section" id="section3" style="display: none;">
+            <h2 class="title"><span>Contact Information</span></h2>
+            <div class="row">
+                <div class="form-horizontal">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1"><b>Physical Address</b></label>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">Address</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="Text4" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">Suite #</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="Text5" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">City</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="Text6" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">State</label>
+                            <div class="col-sm-8">
+                                <select class="form-control">
+                                    <option>Select One</option>
+                                    <option>Texas</option>
+                                    <option>Ohio</option>
+                                    <option>Arizona</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class=" col-md-4 control-label" for="exampleInputEmail1">ZIP</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="Text7" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1"><b>Mailing Address</b></label>
+                            <div class="col-sm-8">
+                                <!--<label for="exampleInputEmail1">
+                                <input type="checkbox">Same as Physical Address 
+                            </label>-->
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        Same as Physical Address
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">Address</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="Text8" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">Suite #</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="Text9" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">City</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="Text10" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">State</label>
+                            <div class="col-sm-8">
+                                <select class="form-control">
+                                    <option>Select One</option>
+                                    <option>Texas</option>
+                                    <option>Ohio</option>
+                                    <option>Arizona</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class=" col-md-4 control-label" for="exampleInputEmail1">ZIP</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="Text11" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3">
+                                <button type="button" class="btn btn-info btn-block" ng-click="section4();">CONTINUE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section" id="section4" style="display: none;">
+            <h2 class="title"><span>Other Information</span></h2>
+            <div class="row">
+                <div class="form-horizontal">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">Sex</label>
+                            <div class="col-sm-8">
+                                <select class="form-control">
+                                    <option>Select One</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">Education</label>
+                            <div class="col-sm-8">
+                                <select class="form-control">
+                                    <option>Select One</option>
+                                    <option>Middle School</option>
+                                    <option>High School</option>
+                                    <option>College</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">Race</label>
+                            <div class="col-sm-8">
+                                <select class="form-control">
+                                    <option>Select One</option>
+                                    <option>Hispanic</option>
+                                    <option>Asian American</option>
+                                    <option>White</option>
+                                    <option>Asian</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="exampleInputEmail1">Annual Income</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="Text12" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label class=" col-md-4 control-label" for="exampleInputEmail1">Marital Status</label>
+                            <div class="col-sm-8">
+                                <select class="form-control">
+                                    <option>Select One</option>
+                                    <option>Single</option>
+                                    <option>Married</option>
+                                    <option>Divorced</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <label class="col-sm-3  control-label">How did you hear about us?</label>
+
+                    <div class="col-sm-9 col-md-9">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option>Select One</option>
+                                    <option>Yellow Pages</option>
+                                    <option>Google</option>
+                                    <option>ValPak</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                    <label class="col-sm-2  control-label">Documents</label>
+                    <div class="col-md-9 col-sm-9 col-sm-offset-1 col-md-offset-1">
+                        <div class="col-sm-8" ng-repeat="file in MultipleFiles">
+                            <div class="form-group">
+                                <div class="input-append">
+                                    <div class="input-group">
+                                        <input ng-model="file.FileSelected" type="text" class="form-control" readonly>
+                                        <span class="input-group-btn">
+                                            <span class="btn btn-default btn-file">Browse&hellip;
+                                                <input id="{{$index}}" onchange="angular.element(this).scope().file_changed(this)" type="file" multiple>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <label class="checkbox-inline">
+                                        <input type="radio" ng-model="file.idProof" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        ID Proof
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="radio" ng-model="file.ssn" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        SSN Copy
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="radio" ng-model="file.other" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                        Other
+                                    </label>
+
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <div class="col-sm-8" id="append-sec">
+                        </div>
+                        <div class="col-sm-8 col-md-8 text-right">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-info" ng-click="add_fields();">Add More</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3">
+                                <button type="button" class="btn btn-info btn-block">COMPLETE REGISTRATION</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
